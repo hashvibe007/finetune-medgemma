@@ -7,3 +7,4 @@ trl
 scikit-learn
 pillow
 torch
+huggingface_hub

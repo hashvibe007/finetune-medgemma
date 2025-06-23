@@ -42,7 +42,12 @@ For running this, we will use skypilot on vast ai for initial setup check and th
 check documentation of skypilot to do setup
 we need one yaml file e.g. finetune-medgemma.yaml 
 <!-- For reference https://docs.skypilot.co/en/latest/getting-started/tutorial.html#ai-training -->
-sky launch -c medgemma-prescription finetune-medgemma.yaml 
+
+
+export HF_TOKEN=xxxx
+
+uv run sky launch -c medgemma-prescription finetune_ayurlekha/finetune-medgemma-prod.yaml --env HF_TOKEN --env CHECKPOINT_BUCKET_NAME="medgemma-prescription"
+
 
 
 
