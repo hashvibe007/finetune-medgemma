@@ -1,0 +1,9 @@
+datasets
+transformers
+bitsandbytes
+evaluate
+peft
+trl
+scikit-learn
+pillow
+torch

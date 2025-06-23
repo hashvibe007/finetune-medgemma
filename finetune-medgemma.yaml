@@ -1,0 +1,17 @@
+# finetune-medgemma.yaml
+# This file is used to finetune the MedGemma model on a custom dataset.
+
+name: finetune-medgemma
+
+resources:
+  cpus: 4+
+  accelerators: L4:1
+
+
+setup: | 
+  git clone https://github.com/hashvibe007/finetune-medgemma || true
+  uv venv
+  uv add -r requirements.txt
+
+run: |
+  uv run main.py 
