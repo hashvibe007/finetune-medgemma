@@ -71,7 +71,7 @@ print(formatted_data["train"][0]["messages"])
 # Fine-tuning the model - we will finetune google/medgemma-4b-it multimodal model
 
 
-model_id = "unsloth/medgemma-4b-it"
+model_id = "google/medgemma-4b-it"
 
 # Check if GPU supports bfloat16
 if torch.cuda.get_device_capability()[0] < 8:
